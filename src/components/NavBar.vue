@@ -3,7 +3,7 @@
 <template>
   <header class="nav-bar">
     <div class="container">
-      <h3 class="name">&lt;Jet Ysalina &#47;&gt;</h3>
+      <h5 class="name">&lt;Jet Ysalina &#47;&gt;</h5>
       <nav>
         <a>Home</a>
         <a>About</a>
@@ -26,6 +26,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
   }
   .name {
     margin: 0;
