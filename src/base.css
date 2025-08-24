@@ -17,6 +17,7 @@
   --color-primary: 0, 0, 0;
   --color-secondary: #3b82f6;
   --color-link-hover: #64748b;
+  --color-button-hover: 177, 187, 202;
   --color-border: #e5e7eb;
 
   --transition: 0.2s color, 0.2s background-color, 0.2s border-color;
@@ -157,8 +158,8 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus {
-  background-color: var(--color-link-hover);
-  border-color: var(--color-link-hover);
+  background-color: rgb(var(--color-button-hover));
+  border-color: rgb(var(--color-button-hover));
 }
 
 /* Images */

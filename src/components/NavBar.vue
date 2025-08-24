@@ -9,7 +9,6 @@
         <a>About</a>
         <a>Skills</a>
         <a>Projects</a>
-        <a>Contact</a>
       </nav>
     </div>
   </header>
@@ -20,7 +19,7 @@
   position: sticky;
   top: 0;
   border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
-  background-color: rgba(var(--color-bg), 0.85);
+  background-color: rgba(var(--color-bg), 0.5);
   backdrop-filter: blur(4px);
   .container {
     display: flex;
@@ -35,7 +34,7 @@
     text-wrap: nowrap;
   }
   nav {
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     gap: 0.5rem;
     a {
@@ -47,9 +46,14 @@
 }
 
 @media (min-width: 401px) {
-  .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .nav-bar {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    nav {
+      display: flex;
+    }
   }
 }
 </style>

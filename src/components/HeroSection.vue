@@ -3,17 +3,19 @@
 <template>
   <section class="hero">
     <div class="container">
+      <p class="text-center">*this page is under construction*</p>
       <h1 class="text-center">Full-Stack Developer</h1>
       <p class="text-center">
-        I craft digital experiences with clean code, modern technologies, and
-        attention to detail. Passionate about building solutions that entertain,
-        inform, and make a difference.
+        I craft digital experiences using clean and efficient techniques.<br />
+        This website is a place to hold all information about the programmer
+        side of me.<br />
+        I hope you enjoy your stay.
       </p>
-      <div>
+      <div class="mt-1">
         <button>View My Work</button>
         <button>Get In Touch</button>
       </div>
-      <div>
+      <div class="mt-1">
         <button>1</button>
         <button>2</button>
         <button>3</button>
