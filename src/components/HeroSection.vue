@@ -7,8 +7,8 @@
       <h1 class="text-center">Full-Stack Developer</h1>
       <p class="text-center">
         I craft digital experiences using clean and efficient techniques.<br />
-        This website is a place to hold all information about the programmer
-        side of me.<br />
+        Welcome to my website!<br />A place that holds all info regarding the
+        software-dev-side of me.<br />
         I hope you enjoy your stay.
       </p>
       <div class="mt-1">
@@ -33,6 +33,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 </style>

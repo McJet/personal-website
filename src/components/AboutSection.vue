@@ -1,15 +1,17 @@
-<script setup>
-import { ref } from "vue";
-
-const count = ref(0);
-</script>
+<script setup></script>
 
 <template>
-  <button @click="count++">You clicked me {{ count }} times.</button>
+  <section class="about">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <h6 class="text-center">*under construction*</h6>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-button {
-  color: red;
+.about {
+  background-color: var(--color-bg-secondary);
+  height: 75vh;
 }
 </style>

@@ -5,22 +5,23 @@ import AboutSection from "./components/AboutSection.vue";
 import SkillsSection from "./components/SkillSection.vue";
 import ProjectsSection from "./components/ProjectSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import FooterBar from "./components/FooterBar.vue";
 import FontTest from "./components/FontTest.vue";
 </script>
 
 <template>
   <NavBar />
   <HeroSection />
-  <FontTest />
-  <FontTest />
-  <FontTest />
-  <FontTest />
-  <FontTest />
   <AboutSection />
+  <FontTest />
+  <FontTest />
+  <FontTest />
+  <FontTest />
+  <FontTest />
   <SkillsSection />
   <ProjectsSection />
   <ContactSection />
-  <FooterSection />
+  <FooterBar />
 </template>
 
 <style scoped></style>
