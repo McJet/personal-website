@@ -8,7 +8,8 @@
 }
 
 :root {
-  --font-family: Inter, Helvetica, Verdana, sans-serif;
+  --font-family-header: "Poppins", sans-serif;
+  --font-family: "Hind", sans-serif;
   --font-size-base: 16px;
 
   --white-rgb: 253, 253, 255;
@@ -90,8 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
-  font-weight: 400;
+  font-family: var(--font-family-header);
   line-height: 1.2;
   margin-bottom: 0.5em;
   color: inherit;
