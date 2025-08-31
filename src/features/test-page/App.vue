@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import FontTest from "./FontTest.vue";
+</script>
 
-<template>Test Page</template>
+<template>
+  <FontTest />
+</template>
 
 <style scoped></style>

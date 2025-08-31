@@ -26,7 +26,8 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
-    <button>button Test Text</button>
+    <button>Test Button</button>
+    <button class="secondary">Test Button</button>
     <a>a Test Text</a>
   </section>
 </template>

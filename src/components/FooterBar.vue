@@ -1,15 +1,23 @@
-<script setup>
-import { ref } from "vue";
-
-const count = ref(0);
-</script>
+<script setup></script>
 
 <template>
-  <button @click="count++">You clicked me {{ count }} times.</button>
+  <footer class="footer-bar">
+    <div class="container">
+      <p>&copy; 2025 Jet Ysalina. All rights reserved.</p>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-button {
-  color: red;
+.footer-bar {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 0.9em;
+  border-top: 1px solid #e5e7eb;
+  p {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 </style>

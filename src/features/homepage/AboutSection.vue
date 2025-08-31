@@ -11,7 +11,8 @@
 
 <style scoped>
 .about {
-  background-color: var(--color-bg-secondary);
+  background-color: rgba(0, 0, 0, 0.025);
   height: 75vh;
+  padding: 2rem;
 }
 </style>

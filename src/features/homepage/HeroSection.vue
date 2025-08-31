@@ -3,19 +3,16 @@
 <template>
   <section class="hero">
     <div class="container">
-      <p class="text-center">*this page is under construction*</p>
       <h1 class="text-center">Full-Stack Developer</h1>
       <p class="text-center">
         I craft digital experiences using clean and efficient techniques.<br />
-        Welcome to my website!<br />A place that holds all info regarding the
-        software-dev-side of me.<br />
-        I hope you enjoy your stay.
+        Welcome to my website! I hope you enjoy your stay.
       </p>
-      <div class="mt-1">
-        <button>View My Work</button>
+      <div class="mt-1 btn-container">
+        <button class="secondary">View My Work</button>
         <button>Get In Touch</button>
       </div>
-      <div class="mt-1">
+      <div class="mt-1 btn-container">
         <button>1</button>
         <button>2</button>
         <button>3</button>
@@ -35,6 +32,10 @@
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  .btn-container {
+    display: flex;
+    gap: 0.5rem;
   }
 }
 </style>
