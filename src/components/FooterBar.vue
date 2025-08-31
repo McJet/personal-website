@@ -3,7 +3,7 @@
 <template>
   <footer class="footer-bar">
     <div class="container">
-      <p>&copy; 2025 Jet Ysalina. All rights reserved.</p>
+      <p class="caption">&copy; 2025 Jet Ysalina. All rights reserved.</p>
     </div>
   </footer>
 </template>

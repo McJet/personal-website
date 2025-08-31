@@ -3,7 +3,9 @@
 <template>
   <header class="nav-bar">
     <div class="container">
-      <h5 class="name">&lt;Jet Ysalina &#47;&gt;</h5>
+      <h5 class="name">
+        <a href="/" class="name"> &lt;Jet Ysalina &#47;&gt; </a>
+      </h5>
       <nav>
         <a>Home</a>
         <a>About</a>
@@ -32,6 +34,9 @@
   .name {
     margin: 0;
     text-wrap: nowrap;
+    a {
+      text-decoration: none;
+    }
   }
   nav {
     display: none;
