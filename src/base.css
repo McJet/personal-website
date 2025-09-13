@@ -8,12 +8,14 @@
 }
 
 :root {
+  color-scheme: light dark;
   --font-family-header: "Poppins", sans-serif;
   --font-family: "Hind", sans-serif;
   --font-size-base: 16px;
 
   --white-hex: #eeeeee;
   --white-rgb: 238, 238, 238;
+  --light-gray-hex: #d5d5d5;
   --gray-hex: #bfc0c0;
   --gray-rgb: 191, 192, 192;
   --blue-hex: #4f5d75;
@@ -25,11 +27,15 @@
   --orange-hex: #ef8354;
   --orange-rgb: 239, 131, 84;
 
-  --color-bg: var(--white-hex);
-  --color-text: var(--dark-blue-hex);
-  --color-text-secondary: var(--blue-hex);
+  --color-bg: light-dark(var(--white-hex), var(--dark-blue-hex));
+  --color-bg-secondary: light-dark(#e0e0e0, #363c55);
+  --color-text: light-dark(var(--dark-blue-hex), var(--white-hex));
+  --color-text-secondary: light-dark(var(--blue-hex), var(--light-gray-hex));
   --color-secondary: var(--orange-hex);
-  --color-border: rgba(var(--gray-rgb), 0.75);
+  --color-border: light-dark(
+    rgba(var(--gray-rgb), 0.75),
+    var(--color-text-secondary)
+  );
 
   --transition: 0.2s color, 0.2s background-color, 0.2s border-color;
 
@@ -41,16 +47,6 @@
 
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: var(--dark-blue-hex);
-    --color-text: var(--white-hex);
-    --color-text-secondary: var(--gray-hex);
-    --color-secondary: var(--orange-hex);
-    --color-border: var(--color-text);
-  }
 }
 
 body {
@@ -136,6 +132,23 @@ a:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+a.button {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+  border-radius: 0.375em;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+}
+.button.inverted {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: 1px solid var(--color-text);
+}
 
 button,
 input[type="button"],
@@ -152,7 +165,7 @@ input[type="reset"] {
   transition: var(--transition);
   outline: none;
 }
-button.secondary {
+button.inverted {
   background-color: var(--color-text);
   color: var(--color-bg);
   border: 1px solid var(--color-text);
@@ -222,6 +235,9 @@ select:focus {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  &.p-0 {
+    padding: 0;
+  }
 }
 .text-center {
   text-align: center;

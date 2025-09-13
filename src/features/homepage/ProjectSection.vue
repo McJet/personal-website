@@ -1,15 +1,46 @@
 <script setup>
-import { ref } from "vue";
-
-const count = ref(0);
+import ProjectCard from "./components/ProjectCard.vue";
+import Projects from "./projects.js";
 </script>
 
 <template>
-  <button @click="count++">You clicked me {{ count }} times.</button>
+  <section class="project" id="projectSection">
+    <div class="container">
+      <h2 class="text-center">What I've Been Up To</h2>
+      <div class="card-wrapper">
+        <ProjectCard
+          v-for="(project, index) in Projects"
+          :key="index"
+          :project="project"
+        />
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-button {
-  color: red;
+.project {
+  background-color: var(--color-bg-secondary);
+  min-height: 75vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+h2 {
+  margin-bottom: 3rem;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 700px) {
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: normal;
+  }
 }
 </style>

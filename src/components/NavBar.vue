@@ -1,16 +1,23 @@
-<script setup></script>
+<script setup>
+function goTo(id) {
+  const el = document.querySelector(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+}
+</script>
 
 <template>
   <header class="nav-bar">
     <div class="container">
       <h5 class="name">
-        <a href="/" class="name"> &lt;Jet Ysalina &#47;&gt; </a>
+        <a @click="goTo('#heroSection')" class="name">
+          &lt;Jet Ysalina &#47;&gt;
+        </a>
       </h5>
       <nav>
-        <a>Home</a>
-        <a>About</a>
-        <a>Skills</a>
-        <a>Projects</a>
+        <a @click="goTo('#heroSection')">Home</a>
+        <a @click="goTo('#projectSection')">Work</a>
       </nav>
     </div>
   </header>
