@@ -8,6 +8,7 @@
 }
 
 :root {
+  color-scheme: light dark;
   --font-family-header: "Poppins", sans-serif;
   --font-family: "Hind", sans-serif;
   --font-size-base: 16px;
@@ -26,12 +27,15 @@
   --orange-hex: #ef8354;
   --orange-rgb: 239, 131, 84;
 
-  --color-bg: var(--white-hex);
-  --color-bg-secondary: #e0e0e0;
-  --color-text: var(--dark-blue-hex);
-  --color-text-secondary: var(--blue-hex);
+  --color-bg: light-dark(var(--white-hex), var(--dark-blue-hex));
+  --color-bg-secondary: light-dark(#e0e0e0, #363c55);
+  --color-text: light-dark(var(--dark-blue-hex), var(--white-hex));
+  --color-text-secondary: light-dark(var(--blue-hex), var(--light-gray-hex));
   --color-secondary: var(--orange-hex);
-  --color-border: rgba(var(--gray-rgb), 0.75);
+  --color-border: light-dark(
+    rgba(var(--gray-rgb), 0.75),
+    var(--color-text-secondary)
+  );
 
   --transition: 0.2s color, 0.2s background-color, 0.2s border-color;
 
@@ -43,17 +47,6 @@
 
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: var(--dark-blue-hex);
-    --color-bg-secondary: #363c55;
-    --color-text: var(--white-hex);
-    --color-text-secondary: var(--light-gray-hex);
-    --color-secondary: var(--orange-hex);
-    --color-border: var(--color-text);
-  }
 }
 
 body {
