@@ -132,6 +132,23 @@ a:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+a.button {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+  border-radius: 0.375em;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+}
+.button.inverted {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: 1px solid var(--color-text);
+}
 
 button,
 input[type="button"],

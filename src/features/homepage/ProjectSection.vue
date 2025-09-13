@@ -1,15 +1,18 @@
 <script setup>
 import ProjectCard from "./components/ProjectCard.vue";
+import Projects from "./projects.js";
 </script>
 
 <template>
-  <section class="project">
+  <section class="project" id="projectSection">
     <div class="container">
       <h2 class="text-center">What I've Been Up To</h2>
       <div class="card-wrapper">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard
+          v-for="(project, index) in Projects"
+          :key="index"
+          :project="project"
+        />
       </div>
     </div>
   </section>
@@ -37,6 +40,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    align-items: normal;
   }
 }
 </style>
