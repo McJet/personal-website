@@ -56,7 +56,6 @@ function goTo(id) {
     }
   }
 }
-
 @media (min-width: 401px) {
   .nav-bar {
     .container {

@@ -1,7 +1,12 @@
 <script setup>
+import { ExternalLink, Github } from "lucide-vue-next";
+
 const props = defineProps(["project"]);
 const project = props.project;
-
+const iconMap = {
+  ExternalLink,
+  Github,
+};
 const hasCtas = Array.isArray(project.ctas) && project.ctas.length > 0;
 </script>
 
@@ -31,12 +36,16 @@ const hasCtas = Array.isArray(project.ctas) && project.ctas.length > 0;
       <div class="button-wrapper" v-if="hasCtas">
         <a
           v-for="(cta, index) in project.ctas"
-          :class="['button', { inverted: index === 0 }]"
+          :class="[
+            'button',
+            { inverted: index === 0 },
+            { disabled: cta.link === '/' },
+          ]"
           :key="cta.link"
           :href="cta.link"
           target="_blank"
         >
-          <span class="svg-icon" v-html="cta.svg"></span>
+          <component :is="iconMap[cta.svg]" size="20" stroke-width="3" />
           {{ cta.label }}
         </a>
       </div>
@@ -96,13 +105,23 @@ h4 {
 }
 .button-wrapper {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  column-gap: 1rem;
   a {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
     border-radius: 4px;
     padding: 0.5em;
-    text-align: center;
     text-decoration: none;
+  }
+}
+@media (min-width: 700px) {
+  .button-wrapper {
+    flex-direction: row;
   }
 }
 </style>

@@ -1,6 +1,40 @@
-import { newTabSvg } from "./svgs";
-
 const projects = [
+  {
+    title: "jetysalina.com",
+    image: "/jetysalina.png",
+    span: "Aug 2025 - Current",
+    description:
+      "A website to hold all of my software developer endeavors. Bought the domain and launched the site so that I could have all my fun little project ideas in one central space. Basically a living document that I will update as life goes on.",
+    skills: [
+      {
+        name: "Vite",
+        link: "https://vite.dev/",
+      },
+      {
+        name: "Firebase",
+        link: "https://firebase.google.com/",
+      },
+      {
+        name: "Vue.js",
+        link: "https://vuejs.org/",
+      },
+      {
+        name: "Lucide",
+        link: "https://lucide.dev/",
+      },
+      {
+        name: "Javascript",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+    ],
+    ctas: [
+      {
+        label: "Code",
+        link: "https://github.com/McJet/personal-website",
+        svg: "Github",
+      },
+    ],
+  },
   {
     title: "Saddleback.com",
     image: "/saddleback.png",
@@ -33,7 +67,7 @@ const projects = [
       {
         label: "Visit",
         link: "https://saddleback.com",
-        svg: newTabSvg,
+        svg: "ExternalLink",
       },
     ],
   },
@@ -42,7 +76,7 @@ const projects = [
     image: "/atm.jpg",
     span: "Feb 2022 - Oct 2022",
     description:
-      "My professional developer journey starts at ATM.com, a fintech startup company. The company's product was a financial app in both iOS and Android. I worked on developing features within the Android side of things.",
+      "My professional developer journey started at ATM.com, a fintech startup company. The company's product was a financial app in both iOS and Android. I worked on developing features within the ATM.com Android App.",
     skills: [
       {
         name: "Kotlin",
@@ -61,7 +95,7 @@ const projects = [
       {
         label: "Visit",
         link: "https://atm.com",
-        svg: newTabSvg,
+        svg: "ExternalLink",
       },
     ],
   },
