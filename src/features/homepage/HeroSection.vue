@@ -3,13 +3,13 @@
 <template>
   <section class="hero">
     <div class="container">
-      <h1 class="text-center">Full-Stack Developer</h1>
+      <h1 class="text-center">Full-Stack Web Developer</h1>
       <p class="text-center">
-        I craft digital experiences using clean and efficient techniques.<br />
-        Welcome to my website! I hope you enjoy your stay.
+        My name is Jet Ysalina and I make websites.<br />
+        Welcome! I hope you enjoy your stay.
       </p>
       <div class="mt-1 btn-container">
-        <button class="secondary">View My Work</button>
+        <button class="inverted">View My Work</button>
         <button>Get In Touch</button>
       </div>
       <div class="mt-1 btn-container">

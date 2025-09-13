@@ -14,6 +14,7 @@
 
   --white-hex: #eeeeee;
   --white-rgb: 238, 238, 238;
+  --light-gray-hex: #d5d5d5;
   --gray-hex: #bfc0c0;
   --gray-rgb: 191, 192, 192;
   --blue-hex: #4f5d75;
@@ -26,6 +27,7 @@
   --orange-rgb: 239, 131, 84;
 
   --color-bg: var(--white-hex);
+  --color-bg-secondary: #e0e0e0;
   --color-text: var(--dark-blue-hex);
   --color-text-secondary: var(--blue-hex);
   --color-secondary: var(--orange-hex);
@@ -46,8 +48,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: var(--dark-blue-hex);
+    --color-bg-secondary: #363c55;
     --color-text: var(--white-hex);
-    --color-text-secondary: var(--gray-hex);
+    --color-text-secondary: var(--light-gray-hex);
     --color-secondary: var(--orange-hex);
     --color-border: var(--color-text);
   }
@@ -152,7 +155,7 @@ input[type="reset"] {
   transition: var(--transition);
   outline: none;
 }
-button.secondary {
+button.inverted {
   background-color: var(--color-text);
   color: var(--color-bg);
   border: 1px solid var(--color-text);
@@ -222,6 +225,9 @@ select:focus {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  &.p-0 {
+    padding: 0;
+  }
 }
 .text-center {
   text-align: center;
