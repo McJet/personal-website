@@ -1,12 +1,6 @@
 <script setup>
-import { ExternalLink, Github } from "lucide-vue-next";
-
 const props = defineProps(["project"]);
 const project = props.project;
-const iconMap = {
-  ExternalLink,
-  Github,
-};
 const hasCtas = Array.isArray(project.ctas) && project.ctas.length > 0;
 </script>
 
@@ -45,7 +39,7 @@ const hasCtas = Array.isArray(project.ctas) && project.ctas.length > 0;
           :href="cta.link"
           target="_blank"
         >
-          <component :is="iconMap[cta.svg]" size="20" stroke-width="3" />
+          <component :is="cta.svg" size="20" stroke-width="2" />
           {{ cta.label }}
         </a>
       </div>

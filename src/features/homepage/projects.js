@@ -1,3 +1,5 @@
+import { ExternalLink, Github } from "lucide-vue-next";
+
 const projects = [
   {
     title: "jetysalina.com",
@@ -31,7 +33,7 @@ const projects = [
       {
         label: "Code",
         link: "https://github.com/McJet/personal-website",
-        svg: "Github",
+        svg: Github,
       },
     ],
   },
@@ -67,7 +69,7 @@ const projects = [
       {
         label: "Visit",
         link: "https://saddleback.com",
-        svg: "ExternalLink",
+        svg: ExternalLink,
       },
     ],
   },
@@ -95,7 +97,7 @@ const projects = [
       {
         label: "Visit",
         link: "https://atm.com",
-        svg: "ExternalLink",
+        svg: ExternalLink,
       },
     ],
   },

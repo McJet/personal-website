@@ -1,4 +1,6 @@
 <script setup>
+import SocialLinks from "./socialLinks";
+
 function goTo(id) {
   const el = document.querySelector(id);
   if (el) {
@@ -12,7 +14,9 @@ function goTo(id) {
     <div class="container">
       <h1 class="text-center">Full-Stack Web Developer</h1>
       <p class="text-center">
-        My name is Jet Ysalina and I make websites.<br />
+        Hello! My name is Jet.<br />
+        I am a professional software developer, wannabe graphic designer, and
+        tech enthusiast.<br />
         Welcome! I hope you enjoy your stay.
       </p>
       <div class="mt-1 btn-container">
@@ -21,11 +25,17 @@ function goTo(id) {
         </button>
         <!-- <button>Get In Touch</button> -->
       </div>
-      <!-- <div class="mt-1 btn-container">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-      </div> -->
+      <div class="mt-1 btn-container">
+        <a
+          v-for="link in SocialLinks"
+          :key="link.url"
+          :href="link.url"
+          :alt="link.alt"
+          target="_blank"
+        >
+          <component :is="link.svg" size="24" stroke-width="2" />
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -45,6 +55,9 @@ function goTo(id) {
   .btn-container {
     display: flex;
     gap: 0.5rem;
+    a {
+      padding: 0.5rem;
+    }
   }
 }
 </style>
