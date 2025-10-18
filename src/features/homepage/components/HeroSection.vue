@@ -1,5 +1,5 @@
 <script setup>
-import SocialLinks from "./socialLinks";
+import SocialLinks from "../scripts/socialLinks";
 
 function goTo(id) {
   const el = document.querySelector(id);

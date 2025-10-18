@@ -1,4 +1,4 @@
-Jet's Personal Website
+# Jet's Personal Website
 
 Using Vite and Vue 3
 

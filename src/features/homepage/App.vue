@@ -1,8 +1,8 @@
 <script setup>
-import NavBar from "../../components/NavBar.vue";
-import FooterBar from "../../components/FooterBar.vue";
-import HeroSection from "./HeroSection.vue";
-import ProjectSection from "./ProjectSection.vue";
+import NavBar from "./components/NavBar.vue";
+import FooterBar from "./components/FooterBar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import ProjectSection from "./components/ProjectSection.vue";
 </script>
 
 <template>
