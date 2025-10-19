@@ -12,7 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        "test-page": resolve(__dirname, "test-page/index.html"),
+        "test-page": resolve(__dirname, "src/features/test-page/index.html"),
       },
     },
   },
