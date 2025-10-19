@@ -34,9 +34,9 @@ function notReady() {
   <nav>
     <button class="title">Box Roulette</button>
     <div class="desktop-only">
-      <button v-on:click="onLeaderboardsClick">Leaderboards</button>
+      <!-- <button v-on:click="onLeaderboardsClick">Leaderboards</button>
       <button v-if="isLoggedIn" v-on:click="onLogOutClick">Log Out</button>
-      <button v-else v-on:click="onSignInClick">Sign In</button>
+      <button v-else v-on:click="onSignInClick">Sign In</button> -->
     </div>
     <button class="mobile-only" v-on:click="isModalEnabled = !isModalEnabled">
       <svg
@@ -60,9 +60,9 @@ function notReady() {
     >
       <Transition name="slide-from-top">
         <div class="modal" v-show="isModalEnabled">
-          <button v-on:click="onLeaderboardsClick">Leaderboards</button>
+          <!-- <button v-on:click="onLeaderboardsClick">Leaderboards</button>
           <button v-if="isLoggedIn" v-on:click="onLogOutClick">Log Out</button>
-          <button v-else v-on:click="onSignInClick">Sign In</button>
+          <button v-else v-on:click="onSignInClick">Sign In</button> -->
         </div>
       </Transition>
     </div>
