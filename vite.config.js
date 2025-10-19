@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         "test-page": resolve(__dirname, "test-page/index.html"),
+        boxRoulette: resolve(__dirname, "boxRoulette/index.html"),
       },
     },
   },
