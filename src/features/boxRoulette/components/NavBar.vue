@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from "vue";
-import { signIn, auth } from "../main.js";
-import { signOut } from "firebase/auth";
 
 defineProps({
   isLoggedIn: Boolean,
@@ -13,18 +11,18 @@ function onLeaderboardsClick() {
   notReady();
 }
 function onSignInClick() {
-  signIn();
+  notReady();
 }
 function onLogOutClick() {
-  signOut(auth)
-    .then(() => {
-      // Sign-out successful.
-      console.log("Sign-out successful.");
-    })
-    .catch((error) => {
-      // An error happened.
-      console.log(error);
-    });
+  // signOut(auth)
+  //   .then(() => {
+  //     // Sign-out successful.
+  //     console.log("Sign-out successful.");
+  //   })
+  //   .catch((error) => {
+  //     // An error happened.
+  //     console.log(error);
+  //   });
 }
 
 function notReady() {

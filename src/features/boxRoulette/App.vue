@@ -2,14 +2,14 @@
 import NavBar from "./components/NavBar.vue";
 import Game from "./components/Game.vue";
 import gameController from "./gameController.js";
-import { isUserSignedIn } from "./main.js";
+// import { isUserSignedIn } from "../../../boxRoulette/boxRoulette.js";
 
 const { isGameOver } = gameController();
 </script>
 
 <template>
   <div class="page" :class="{ gameOver: isGameOver }">
-    <NavBar v-bind:isLoggedIn="isUserSignedIn" />
+    <NavBar v-bind:isLoggedIn="false" />
     <section class="main-view">
       <Game />
     </section>
